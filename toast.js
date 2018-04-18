@@ -161,7 +161,7 @@ function initToast() {
 
     addCSSRule(sheet,
         '.success .error_inner',
-        'background-image: url("http://imgur.com/download/HxkisKF");'
+        'background-image: url("https://static.mypreview.one/assets/img/check.png");'
     );
 
     addCSSRule(sheet,
