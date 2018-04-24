@@ -161,7 +161,7 @@ function initToast() {
 
     addCSSRule(sheet,
         '.success .error_inner',
-        'background-image: url("https://static.mypreview.one/assets/img/check.png");'
+        'background-image: url("https://i0.wp.com/demo.mypreview.one/wp-content/uploads/2018/04/check.png");'
     );
 
     addCSSRule(sheet,
