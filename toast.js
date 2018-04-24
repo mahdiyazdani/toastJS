@@ -37,12 +37,12 @@ function initToast() {
             '</div>'
         ;
 
-    $('body').append(html);
+    jQuery('body').append(html);
 
     var style = document.createElement("style");
     style.appendChild(document.createTextNode(""));
     document.head.appendChild(style);
-    var sheet = document.styleSheets[0];
+    var sheet = document.styleSheets[11];
     addCSSRule(sheet,
         '.empty_error_text',
         'text-align: center;' +
@@ -161,7 +161,7 @@ function initToast() {
 
     addCSSRule(sheet,
         '.success .error_inner',
-        'background-image: url("https://static.mypreview.one/assets/img/check.png");'
+        'background-image: url("http://imgur.com/download/HxkisKF");'
     );
 
     addCSSRule(sheet,
@@ -295,25 +295,25 @@ function showError(msg, type, hide) {
 	try{
 	
 
-    $('.error').attr('class', 'error');
-    $('.error .error_right').html(msg);
+    jQuery('.error').attr('class', 'error');
+    jQuery('.error .error_right').html(msg);
 
     switch (type) {
         case 'success':
-            $('.error').addClass('success');
+            jQuery('.error').addClass('success');
             break;
         case 'error':
             break;
         case 'loading':
-            $('.error').addClass('loader');
+            jQuery('.error').addClass('loader');
             break;
     }
 
-    $('.error').addClass('show');
+    jQuery('.error').addClass('show');
 
     if (hide) {
         setTimeout(function () {
-            $('.error').attr('class', 'error');
+            jQuery('.error').attr('class', 'error');
         }, 2000);
     }
 		
@@ -324,7 +324,7 @@ function showError(msg, type, hide) {
 }
 function hideError() {
 	try{
-    $('.error').attr('class', 'error');
+    jQuery('.error').attr('class', 'error');
 	}
 	catch(e){
 		console.log(e);
